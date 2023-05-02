@@ -1,0 +1,68 @@
+.cell {
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   min-width: 40px;
+   min-height: 40px;
+   width: 100%;
+   height: 100%;
+   border: 1px solid gray;
+   display: flex;
+   background-color: field;
+   position: relative;
+}
+
+.cell:focus,
+.selected {
+   background-color: lightblue !important;
+}
+
+.cellinput, .cellinput:disabled {
+   width: 100%;
+   text-align: center;
+   padding: 0;
+   font-size: 4em;
+   font-weight: 600;
+   caret-color: transparent;
+   background-color: transparent;
+   border: 1px solid #ffffff00;
+}
+
+.highlight {
+   background-color: #e0ffff3c;
+}
+
+.topBorder {
+   border-top: 3px solid white;
+}
+
+.leftBorder {
+   border-left: 3px solid white;
+}
+
+.guesses {
+   position: absolute;
+   display: grid;
+   width: 100%;
+   grid-template-columns: repeat(3, 1fr);
+   pointer-events: none;
+}
+
+.guess {
+  /* width: fit-content; */
+  height: 24px;
+  /* position: absolute; */
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+   -moz-appearance: textfield;
+}
+

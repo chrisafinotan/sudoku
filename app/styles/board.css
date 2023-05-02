@@ -1,0 +1,6 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    width: 80vh;
+    height: 80vh;
+}
